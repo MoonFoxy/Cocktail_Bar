@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/light"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary">
+
+    <ImageView
+        android:id="@+id/summer_holidays"
+        android:layout_width="283dp"
+        android:layout_height="283dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="57dp"
+        android:background="@drawable/summer_holidays"
+        app:srcCompat="@drawable/summer_holidays" />
+
+    <TextView
+        android:id="@+id/app_title"
+        android:layout_width="187dp"
+        android:layout_height="47dp"
+        android:layout_below="@+id/summer_holidays"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="@string/app_title"
+        android:textAppearance="@style/app_title"
+        app:lineHeight="47sp" />
+
+    <RelativeLayout
+        android:id="@+id/frame_32"
+        android:layout_width="130dp"
+        android:layout_height="185dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="21dp">
+
+        <TextView
+            android:id="@+id/create_cocktail_hint"
+            android:layout_width="130dp"
+            android:layout_height="42dp"
+            android:gravity="center_horizontal|top"
+            android:text="@string/create_cocktail_hint"
+            android:textAppearance="@style/create_cocktail_hint"
+            app:lineHeight="21sp" />
+
+        <View
+            android:id="@+id/arrow"
+            android:layout_width="31dp"
+            android:layout_height="0dp"
+            android:background="@drawable/arrow"
+            />
+
+        <View
+            android:id="@+id/ellipse_1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:background="#4B97FF"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>
